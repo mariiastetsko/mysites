@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Navigationsmenu */
+
+[href="index.html"] {
+  color: #ffb800;
+}
+
+/* Main content */
+
+/* Erster Block. Allgemeine Information ueber Corona */
+
+.first-block {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-block-text {
+  width: 660px;
+  padding-bottom: 120px;
+}
+
+.first-block h1 {
+  text-align: center;
+}
+
+.first-block-text h1 {
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 67px;
+  color: #ffb800;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 110px;
+}
+
+.first-block-text p {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.virus-images {
+  width: 410px;
+  margin-top: 30px;
+}
+
+.virus3 {
+  margin-left: 70px;
+  margin-bottom: -30px;
+}
+
+.virus2 {
+  margin-left: 30px;
+  margin-bottom: -30px;
+}
+
+/* Second block. Video about corona */
+
+.second-block {
+  margin: 10px 100px;
+}
+
+.second-block h2 {
+  font-family: Encode Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  color: #ffb800;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.coronavirus-video {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Third block. Symptome des Covid-19 */
+
+.third-block {
+  margin: 130px 100px 190px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.third-block-text {
+  width: 660px;
+  /* padding-bottom: 120px; */
+}
+
+.third-block h2 {
+  text-align: center;
+}
+
+.third-block-text h2 {
+  font-family: Encode Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  color: #ffb800;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.third-block-text p {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.symptoms-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 30px;
+}

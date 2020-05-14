@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Navigationsmenu */
+
+[href="ausbreitung.html"] {
+  color: #ffb800;
+}
+
+/* Erster Block. Statistik von Infizierten */
+
+.statistic {
+  margin: 80px 100px;
+}
+
+.statistic h2 {
+  font-family: Encode Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 47px;
+  color: #ffffff;
+}
+
+.statistic h2 span {
+  color: #ffb800;
+  margin-left: 55px;
+}
+
+.statistic h3 {
+  font-family: Encode Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 47px;
+  color: #ffb800;
+}
+
+.statistic h3 span {
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.statistic-blocks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.statistic-blocks div {
+  background-color: #e5c2e5;
+  width: 250px;
+  height: 140px;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: Encode Sans, sans-serif;
+  font-size: 26px;
+  padding-top: 20px;
+}
+
+.statistic-blocks .active-infected {
+  color: #ff0000;
+}
+
+ .active-infected .numbers {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 35px;
+}
+
+.statistic-blocks .confirmed {
+  color: #ef950d;
+}
+
+ .confirmed .numbers {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 35px;
+}
+
+.statistic-blocks .dead {
+  color: #000000;
+}
+
+ .dead .numbers {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 35px;
+}
+
+.statistic-blocks .recovered {
+  color: #08be1a;
+}
+
+.recovered .numbers {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 35px;
+}
+
+
+
+/* Zweiter Block. Laender, Karte und Grafik */
+
+/* Statistik */
+
+.countries-section {
+margin: 10px 100px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;  
+}
+
+
+ .countries {
+  width: 350px;
+  height: 900px;
+  background-color: #AE67AB;
+  color: #ffffff;
+  border-radius: 10px;
+  overflow: auto;
+  position: relative;
+   
+  }
+
+  .countries p {
+    font-size: 20px;
+    font-weight: 200;
+    margin-left: 30px; 
+    margin-top: 30px;
+  }
+
+  .countries span {
+  font-weight: bold;
+  
+  }
+ 
+  span.country {
+    font-weight: normal;
+    position: absolute;
+    left: 160px;
+   }
+
+   span.country:last-child {
+     margin-bottom: 20px;
+   }
+  
+   /* Karte und Grafik */
+  .map-and-graphic {
+   width: 700px;
+ }
+
+.map{
+  width: 700px;
+  height: auto;
+}
+
+.graphic {
+  width: 700px;
+  height: auto;
+  margin-top: 50px; 
+}

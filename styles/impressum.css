@@ -1,0 +1,23 @@
+
+/*link e-mailto*/
+a.mail:link {
+    text-align: left;
+    font: Ubuntu;
+    font-size: 22;
+    color: #FFB800B3; 
+}
+
+a.mail:hover{
+    text-align: left;
+    font: Ubuntu;
+    font-size: 22;
+    color: #FFB800; 
+}
+
+/*span elemente*/
+.spanInText {
+    text-align: left;
+    font: Ubuntu;
+    font-size: 22;
+    color: #FFB800B3; 
+}

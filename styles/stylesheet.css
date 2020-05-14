@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  /*hintergrund*/
+  background: #2b002b;
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(88, 20, 83, 0.59) 12.5%,
+    rgb(43, 0, 43) 100%
+  );
+
+  font-family: Ubuntu, sans-serif;
+  font-size: 18px;
+}
+
+/* Header */
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  line-height: 17px;
+}
+
+/* Logo (Bild und Text) */
+
+.logo {
+  margin-left: 100px;
+  margin-top: 25px;
+}
+
+.logo-img {
+  width: 100px;
+  height: 104px;
+  margin-left: 35px;
+}
+
+.logo-name {
+  font-family: Encode Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 37px;
+  color: #ffb800;
+}
+
+/* Navigationsmenu */
+
+.nav-header {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.nav-header li {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0;
+}
+
+a {
+  color: #ffffff;
+}
+
+.header-link a:link {
+  text-decoration: none;
+}
+
+.nav-header li a:hover {
+  color: #ffb800;
+  text-decoration: underline;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6b1569;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4e0f4c;
+}
+
+/* Footer */
+.nav-footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.nav-footer li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer-link a:link {
+  text-decoration: none;
+}
+
+.nav-footer li a:hover {
+  color: #ffb800;
+  text-decoration: underline;
+}
+
+/* .paragraphUeberschrift {
+  padding: 10px;
+  text-align: left;
+  font: Ubuntu;
+  font-size: 22;
+  color: #ffb800;
+} */
+
+/* Link auf externe Web-Seiten*/
+
+a.extern:link {
+  text-align: left;
+  font: Ubuntu;
+  font-size: 22;
+  color: #ffb800b3;
+}
+
+a.extern:hover {
+  text-align: left;
+  font: Ubuntu;
+  font-size: 22;
+  color: #ffb800;
+}
+
+a.extern:visited,
+a.extern:active {
+  text-align: left;
+  font: Ubuntu;
+  font-size: 22;
+  color: #44c4a1;
+}

@@ -1,0 +1,287 @@
+.ueberschrift{
+    color: #FFB800E6;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+#quadrat {
+    position: relative;
+    left: 5%;
+    width:90%;
+    height:80%;
+    padding-top: 10px;
+    background: #ffffff0D;
+}
+
+input[type=text], select {
+  width: 292px;
+  padding: 5px 5px;
+  margin: 8px 0;
+  font-family: Ubuntu;
+  font-size:16px;
+  background-color: #FFB80066;
+  color: #ffffffcc;
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+object{
+  width: 14px;
+  height: 14px;
+  background-color: none;
+}
+
+/*selection Grund no customization till now*/ 
+select{
+  font-size: 18px;
+  background-color: #FFB80066;
+  color: #ffffffcc;
+  padding: 5px 5px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  border-color: #FFB80066 transparent transparent transparent;
+}
+
+
+
+
+/*id-label left side*/
+#anrede {
+  position: absolute;
+  margin-top: 10px;
+  left: 45px;
+  color: #FFB800B3;
+
+}
+#name{
+  position: absolute;
+  margin-top: 55px;
+  left: 45px;
+  color: #FFB800B3;
+}
+#nameFeld{
+  position: absolute;
+  margin-top: 80px;
+  left: 45px;
+  width: 250px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  color: #ffffff;
+  resize: none;
+}
+#email{
+  position: absolute;
+  margin-top: 120px;
+  left: 45px;
+  color: #FFB800B3;
+}
+#emailFeld{
+  position: absolute;
+  margin-top: 150px;
+  left: 45px;
+  width: 250px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  color: #ffffff;
+  resize: none;
+}
+#grundKontakt{
+  position: absolute;
+  margin-top: 190px;
+  left: 45px;
+  color: #FFB800B3;
+}
+
+#kontaktselect {
+  position: absolute;
+  height: 27px;
+  width: 250px;
+  margin-top: 220px;
+  left: 45px;
+  background-color: #FFB80066;
+  
+  
+}
+#nachricht{
+  position: absolute;
+  margin-top: 260px;
+  left: 45px;
+  color: #FFB800B3;
+}
+
+/*Nachricht box*/
+#textarea {
+  position: absolute;
+  left: 45px;
+  margin-top: 290px;
+  width: 50%;
+  height: 180px;
+  background-color: #FFB80066;
+  padding: 3px 5px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  font-family: Ubuntu;
+  font-size: 18px;
+  color: #ffffff;
+  resize: none;
+}
+
+/*id-lable right side*/
+#vorname{
+  position: absolute;
+  margin-top: 29px;
+  left: 400px;
+  color: #FFB800B3;
+}
+
+#vornameFeld{
+  position: absolute;
+  margin-top: 54px;
+  left: 400px;
+  width: 250px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  color: #ffffff;
+  resize: none;
+}
+
+#telefon{
+  position: absolute;
+  margin-top: 94px;
+  left: 400px;
+  color: #FFB800B3;
+}
+#telefonFeld{
+  position: absolute;
+  margin-top: 124px;
+  left: 400px;
+  width: 250px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  color: #ffffff;
+  resize: none;
+}
+#datum{
+  position: absolute;
+  margin-top: 188px;
+  left: 400px;
+  color: #FFB800B3;
+}
+
+/*selection Geburstag*/
+.tag-select select{
+  position: absolute;
+  margin-top:172px;
+  height: 27px;
+  width: 90px;
+  left: 400px;
+  top: 57px;
+}
+
+.monat-select select{
+  position: absolute;
+  margin-top:172px;
+  height: 27px;
+  width: 90px;
+  left: 500px;
+  top: 57px;
+}
+
+.jahr-select select{
+  position: absolute;
+  margin-top:172px;
+  height: 27px;
+  width: 90px;
+  left: 600px;
+  top: 57px;
+}
+
+/* classen für Checkbox geschlecht - Angelehnt an w3school tutorial*/
+.geschlecht {
+    display: inline-block;
+    position: relative;
+    left: 45px;
+    top: 30px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: #FFB800B3;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .geschlecht input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+/* Position des checkbox*/
+  .checkbox {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    background-color: #FFB80066;
+    border-radius: 50%;
+  }
+  /*checkbox verhalten (wie link)*/
+  .geschlecht:hover input ~ .checkbox {
+    background-color: #FFB800B3;
+  }
+  
+  .geschlecht input:checked ~ .checkbox {
+    background-color: #FFB800;
+  }
+  
+  .checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .geschlecht input:checked ~ .checkbox:after {
+    display: block;
+  }
+  
+  /*style chegecheckte box*/
+  .geschlecht .checkbox:after {
+      top: 3px;
+      left: 3px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #000000E6;
+  }
+
+  /*Abschicken button*/
+
+  input[type=submit] {
+    position: absolute;
+    left: 45px;
+    bottom: 30px;
+    width: 124px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #FFB800cc;
+    color: #ffffffcc;
+    padding: 5px 5px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #FFB80099;
+  }
