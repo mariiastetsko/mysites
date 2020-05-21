@@ -4,7 +4,7 @@
 
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   /*hintergrund*/
   background: #2b002b;
   background-image: radial-gradient(
@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   font-style: normal;
   line-height: 17px;
 }
@@ -57,6 +58,7 @@ body {
   margin-top: 20px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-right: 100px;
 }
 
@@ -79,10 +81,62 @@ a {
   text-decoration: underline;
 }
 
+.nav-header .stop-corona-mobile {
+  display: none;
+}
+
+/* Navigationsmenu Mobile */
+
+@media screen and (max-width: 700px) {
+  .header-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header-wrapper .logo {
+    display: none;
+  }
+
+  .nav-header .stop-corona-mobile {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #ffb800;
+  }
+
+  .nav-header {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0px auto;
+  }
+
+  .nav-header li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    font-size: 24px;
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .nav-header li:not(:first-child):hover {
+    background-color: #6b1569;
+    color: #ffb800;
+  }
+
+  .nav-header li a:hover {
+    text-decoration: none;
+  }
+}
+
 /* Scrollbar */
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
 
 /* Track */
@@ -124,27 +178,19 @@ a {
   text-decoration: underline;
 }
 
-/* .paragraphUeberschrift {
-  padding: 10px;
-  text-align: left;
-  font: Ubuntu;
-  font-size: 22;
-  color: #ffb800;
-} */
-
 /* Link auf externe Web-Seiten*/
 
 a.extern:link {
   text-align: left;
   font: Ubuntu;
-  font-size: 22;
+  font-size: 18;
   color: #ffb800b3;
 }
 
 a.extern:hover {
   text-align: left;
   font: Ubuntu;
-  font-size: 22;
+  font-size: 18;
   color: #ffb800;
 }
 
@@ -152,6 +198,6 @@ a.extern:visited,
 a.extern:active {
   text-align: left;
   font: Ubuntu;
-  font-size: 22;
+  font-size: 18;
   color: #44c4a1;
 }

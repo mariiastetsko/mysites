@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8" />
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>impressum</title>
+        <link rel="stylesheet" href="./styles/reset.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./styles/styletest.css"/>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header-wrapper">
+            <div class="logo">
+                <img class="logo-img" src="./images/logo.svg" alt="Coronavirus Logo" />
+                <div class="logo-name">Stop corona</div>
+              </div>
+            <nav class="nav-menu">
+            <label for="show-menu" class="show-menu">Navigationsmenü</label>
+                <input type="checkbox" id="show-menu" role="button">
+                    <ul id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ausbreitung.html">Ausbreitung</a></li>
+                        <li>
+                            <a href="hygenetipps.html">Hygienetipps</a>
+                            <ul class="hidden">
+                                <li><a href="#">Hygenietipps1</a></li>
+                                <li><a href="#">Hygenietipps2</a></li>
+                                <li><a href="#">Hygenietipps3</a></li>
+                            </ul>
+                        <li><a href="kontakt.html">Covid-Hilfe</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <main>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat sint maxime sunt, possimus quas voluptatibus perspiciatis est beatae harum aliquid adipisci rerum laboriosam, officiis placeat ut, pariatur natus optio facere.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolores asperiores soluta voluptates nobis architecto suscipit, in laborum vel ipsa reiciendis ipsam magnam, odit nisi? Ab sunt quaerat eligendi voluptate?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint error eos accusamus ipsa impedit culpa autem nemo dignissimos! Perspiciatis unde ipsum officia iure minus iste consectetur nisi, voluptates optio fuga.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius fugit magni dolorem ad iste sint culpa quos alias, rem porro. Tempora beatae obcaecati quo enim veritatis tempore numquam quas. Ipsum?
+                lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe fugit cum eos aspernatur expedita ipsam, sunt natus? Sit omnis dignissimos incidunt voluptatibus voluptatum consequatur a, nemo repellat rem consequuntur voluptas.
+                lorem
+            </p>
+        </main>
 
-</head>
-<body>
-    <header>
-        <!-- Menu goes here -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ausbreitung.html">Ausbreitung</a></li>
-                <li><b>Hygenetipps</b></li>
-                <li><a href="covid-hilfe.html">Covid-Hilfe</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-<footer>
-    <nav>
+    
+    <!-- Footer -->
+    <footer>
+        <nav class="nav-footer">
         <ul>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="impressum.html">Impressum</a></li>
+            <li class="footer-link"><a href="kontakt.html">Kontakt</a></li>
+            <li class="footer-link"><a href="impressum.html">Impressum</a></li>
         </ul>
-    </nav>
-</footer>
+        </nav>
+    </footer>
+</body>
 </html>

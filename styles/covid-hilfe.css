@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Navigationsmenu */
+
+[href="covid-hilfe.html"] {
+  color: #ffb800;
+}
+
+h1 {
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 67px;
+  color: #ffb800;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 60px;
+  margin-left: 7%;
+}
+
+.text {
+  margin-left: 20px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.titel {
+  color: #ffb800;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/*svg Symbol check*/
+.check {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  background-color: none;
+}
+
+.container {
+  width: 80%;
+  margin-top: 40px;
+  margin-left: 5%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 400px 475px 1fr;
+  grid-gap: 25px;
+  grid-template-areas:
+    "einfuehrung einfuehrung"
+    "paragraph1 bild1"
+    "bild2 paragraph2"
+    "paragraph3 bild3";
+}
+
+.einfuehrung {
+  grid-area: einfuehrung;
+}
+
+.paragraph1 {
+  grid-area: paragraph1;
+}
+
+.bild1 {
+  grid-area: bild1;
+  margin-top: 5%;
+  margin-right: 40%;
+}
+.paragraph2 {
+  grid-area: paragraph2;
+}
+
+.bild2 {
+  grid-area: bild2;
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+.paragraph3 {
+  grid-area: paragraph3;
+}
+
+.bild3 {
+  grid-area: bild3;
+  margin-top: 5%;
+  margin-right: 40%;
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 300px 300px 350px 450px 1fr 300px;
+    grid-template-areas:
+      "einfuehrung "
+      "paragraph1 "
+      "bild1 "
+      "paragraph2 "
+      "bild2 "
+      "paragraph3 "
+      "bild3 ";
+    grid-gap: 20px;
+  }
+
+  .bild1 {
+    grid-area: bild1;
+    margin-left: 5%;
+  }
+
+  .bild2 {
+    grid-area: bild2;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .bild3 {
+    grid-area: bild3;
+    margin-left: 5%;
+  }
+}
+
+footer {
+  margin-top: 10%;
+}

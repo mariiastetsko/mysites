@@ -64,7 +64,7 @@
   color: #ff0000;
 }
 
- .active-infected .numbers {
+.active-infected .numbers {
   font-size: 32px;
   font-weight: 600;
   margin-top: 35px;
@@ -74,7 +74,7 @@
   color: #ef950d;
 }
 
- .confirmed .numbers {
+.confirmed .numbers {
   font-size: 32px;
   font-weight: 600;
   margin-top: 35px;
@@ -84,7 +84,7 @@
   color: #000000;
 }
 
- .dead .numbers {
+.dead .numbers {
   font-size: 32px;
   font-weight: 600;
   margin-top: 35px;
@@ -100,59 +100,54 @@
   margin-top: 35px;
 }
 
-
-
 /* Zweiter Block. Laender, Karte und Grafik */
 
 /* Statistik */
 
 .countries-section {
-margin: 10px 100px;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;  
+  margin: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-
- .countries {
+.countries {
   width: 350px;
   height: 900px;
-  background-color: #AE67AB;
+  background-color: #ae67ab;
   color: #ffffff;
   border-radius: 10px;
   overflow: auto;
   position: relative;
-   
-  }
+}
 
-  .countries p {
-    font-size: 20px;
-    font-weight: 200;
-    margin-left: 30px; 
-    margin-top: 30px;
-  }
+.countries p {
+  font-size: 20px;
+  font-weight: 200;
+  margin-left: 30px;
+  margin-top: 30px;
+}
 
-  .countries span {
+.countries span {
   font-weight: bold;
-  
-  }
- 
-  span.country {
-    font-weight: normal;
-    position: absolute;
-    left: 160px;
-   }
+}
 
-   span.country:last-child {
-     margin-bottom: 20px;
-   }
-  
-   /* Karte und Grafik */
-  .map-and-graphic {
-   width: 700px;
- }
+span.country {
+  font-weight: normal;
+  position: absolute;
+  left: 160px;
+}
 
-.map{
+span.country:last-child {
+  margin-bottom: 20px;
+}
+
+/* Karte und Grafik */
+.map-and-graphic {
+  width: 700px;
+}
+
+.map {
   width: 700px;
   height: auto;
 }
@@ -160,5 +155,28 @@ flex-wrap: wrap;
 .graphic {
   width: 700px;
   height: auto;
-  margin-top: 50px; 
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1260px) {
+  .map-and-graphic {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main {
+    width: 100%;
+  }
+
+  .countries-section .countries {
+    width: 350px;
+    height: 500px;
+    overflow-x: hidden;
+  }
+
+  .map,
+  .graphic {
+    width: 300px;
+  }
 }

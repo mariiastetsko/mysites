@@ -1,10 +1,20 @@
 
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Navigationsmenu */
+  
+  [href="impressum.html"] {
+    color: #ffb800;
+  }
+
 /*link e-mailto*/
 a.mail:link {
     text-align: left;
     font: Ubuntu;
     font-size: 22;
-    color: #FFB800B3; 
+    color: #FFB800CC; 
 }
 
 a.mail:hover{
@@ -14,10 +24,48 @@ a.mail:hover{
     color: #FFB800; 
 }
 
+h1{
+    margin-left: 10%;
+    font-family: Encode Sans;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 67px;
+    color: #ffb800;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 110px;
+}
+.paragraphUeberschrift p{
+    margin-left: 10%;
+    width: 70%;
+    color: #ffb800;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.text p{
+    color: #ffffff;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-left: 10%;
+    width: 70%;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
 /*span elemente*/
 .spanInText {
-    text-align: left;
-    font: Ubuntu;
-    font-size: 22;
-    color: #FFB800B3; 
+    color: #FFB80080; 
 }
+footer{
+    margin-top: 10%;
+}
+

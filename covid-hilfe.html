@@ -1,30 +1,139 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8" />
-    <title>Home</title>
-    <link rel="allgemeinstyle" type="text/css" href="allgemeinstyle.css" media="screen" />    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>covid-hilfe</title>
+        <link rel="stylesheet" href="./styles/reset.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/stylesheet.css" />
+        <link rel="stylesheet" href="./styles/covid-hilfe.css" />
+    </head>
+    <body>
+    <!-- Header -->
+    <header class="header-wrapper">
+        <div class="logo">
+        <img class="logo-img" src="./images/logo.svg" alt="Coronavirus Logo" />
+        <div class="logo-name">Stop corona</div>
+        </div>
 
-</head>
-<body>
-    <header>
-        <!-- Menu goes here -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ausbreitung.html">Ausbreitung</a></li>
-                <li><a href="hygenetipps.html">Hygenetipps</a></li>
-                <li><b>Covid-Hilfe</b></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
+        <!-- Navigationsmenu -->
+        <nav class="nav-header">
+        <ul>
+            <li class="header-link"><a href="index.html">Home</a></li>
+            <li class="header-link">
+            <a href="ausbreitung.html">Ausbreitung</a>
+            </li>
+            <li class="header-link">
+            <a href="hygenetipps.html">Hygienetipps</a>
+            </li>
+            <li class="header-link">
+            <a href="covid-hilfe.html">Covid-Hilfe</a>
+            </li>
+            <li class="header-link"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
         </nav>
     </header>
-<footer>
-    <nav>
+    <main>
+    <!-- Content der Covid-hilfe Seite -->
+        <h1>
+            Covid-Hilfe<br>
+            Wer kann Ihnen helfen
+        </h1>
+        <!-- Einführung -->
+        <div class="container">
+            <div class="wrapper">
+                <div class="einfuehrung">
+                    <p class=text>Mit dem Ausbruch der Krise und Beginn des Lockdowns viele Personen
+                        und Unternehmen befinden sich in einer schwierigen Lage. Hier können 
+                        Sie die wichtigsten Maßnahmen finden, die Ihnen in dieser Situation 
+                        weiterhelfen können.
+                    </p>
+                </div>
+                <!-- 1. Paragraph -->
+                <div class="paragraph1">
+                    <p class=titel>
+                        Finanzielle Unterstützung für Unternehmen
+                    </p>
+                    <p class=text>
+                        Ihnen liegt einem Liquiditätsengpass vor? Wenn infolge der Corona-Pandemie 
+                        die fortlaufenden Einnahmen aus dem Geschäftsbetrieb voraussichtlich nicht ausreichen, 
+                        um die Verbindlichkeiten zu zahlen, dann können Sie die 
+                        <a href="https://www.stmwi.bayern.de/soforthilfe-corona/">Soforthilfe Corona</a> 
+                        des Freistaates Bayern beantragen. Gefordert werden aller Unternehmen bis zu max. 50.000 Euro. 
+                    </p>
+                </div>
+                <!-- 1. Bild -->
+                <div class="bild1">
+                    <object data="./images/business-and-finance.svg" type="image/svg+xml"></object>
+                </div>
+                <!-- 2. Bild -->
+                <div class="bild2">
+                    <object data="./images/buildings.svg" type="image/svg+xml"></object>
+                </div>
+                <!-- 2. Paragraph -->
+                <div class="paragraph2">
+                    <p class=titel>
+                        Finanzielle Unterstützung für Künstler und Kreative
+                    </p>
+                    <p class=text>
+                        Die Corona-Pandemie hat verheerende Folgen für die Kultur- und Kreativwirtschaft. 
+                        Vor allem viele kleine kulturellen Einrichtungen stehen am finanziellen Abgrund. 
+                        Für Künstlerinnen und Künstler geht es um die eingene berüfliche Existenz. 
+                        Die Bundesregierung hat infolgedessen unterschiedlichen Hilfsprogrammen für 
+                        <a href="https://www.bundesregierung.de/breg-de/bundesregierung/staatsministerin-fuer-kultur-und-medien/aktuelles/bund-ermoeglicht-ausfallhonorare-in-der-corona-krise-gruetters-alle-moeglichkeiten-ausschoepfen--1749266" class="extern">Ausfallhonorare</a>,  
+                        <a href="https://www.bundesregierung.de/breg-de/bundesregierung/staatsministerin-fuer-kultur-und-medien/programm-neustart-1749592" class="extern">Museen</a> und 
+                        <a href="https://www.bundesregierung.de/breg-de/bundesregierung/staatsministerin-fuer-kultur-und-medien/aktuelles/bund-startet-soforthilfeprogramm-fuer-freie-orchester-und-ensembles-gruetters-vielfalt-unserer-einzigartigen-musiklandschaft-sichern--1749236" class="extern">Orchester</a> 
+                        gestartet, welche die Existenz diese Organisationen vor der Krise schützen wollen. 
+                    </p>
+                </div>
+                <!-- 3. Paragraph -->
+                <div class="paragraph3">
+                    <p class=titel>
+                        Finanzielle Unterstützung für Familien
+                    </p>
+                    <p class=text>
+                        Während dieser Pandemie ist es wichtig, wenn möglich zuhause zu bleiben, gut aufeinander Acht zu geben 
+                        und sich dennoch gegenseitig zu unterstützen. Mit der Schließung der Kindergärten und Schulen befinden 
+                        sich die Familien unter besonderem Druck. Deswegen hat die Bundesregierung das Programm 
+                        <a href="https://familienportal.de/familienportal/familienleistungen/corona/finanzielle-hilfen#anchor-link-9-154114" class="extern">Familien in der Corona-Zeit</a>
+                        gestartet, welches die zahlreichen individuellen Herausforderungen unterstützen will.<br> 
+                        <br> Das Porgramm bietet folgende Hilfen:<br>
+                        <br><object class="check" data="./graphik/check.svg" type="image/svg+xml"></object>
+                        Lohnfortzahlung bei Kinderbetreuung <br>
+                        <br><object class="check" data="./graphik/check.svg" type="image/svg+xml"></object>
+                        Notbetreuung <br>
+                        <br><object class="check" data="./graphik/check.svg" type="image/svg+xml"></object>
+                        Notfall-Kinderzuschlag<br>
+                        <br>Außerdem werden Tipps zu wichtigen Alltagsproblemen angeboten: <br>
+                        <br><object class="check" data="./graphik/check.svg" type="image/svg+xml"></object>
+                        die Vereinbarung von Familie und Home-Office <br>
+                        <br><object class="check" data="./graphik/check.svg" type="image/svg+xml"></object>
+                        die Unterstützung der Elternn im Alltag  
+                </div>
+                <!-- 3. Bild -->
+                <div class="bild3">
+                    <object data="./images/daughter.svg" type="image/svg+xml"></object>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <nav class="nav-footer">
         <ul>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="impressum.html">Impressum</a></li>
+          <li class="footer-link"><a href="kontakt.html">Kontakt</a></li>
+          <li class="footer-link"><a href="impressum.html">Impressum</a></li>
         </ul>
-    </nav>
-</footer>
+      </nav>
+    </footer>
+  </body>
 </html>

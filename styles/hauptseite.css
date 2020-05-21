@@ -17,6 +17,7 @@
   margin-right: 100px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .first-block-text {
@@ -84,6 +85,7 @@
 .coronavirus-video {
   width: 100%;
   height: auto;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   margin-top: 50px;
@@ -95,6 +97,7 @@
   margin: 130px 100px 190px 100px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .third-block-text {
@@ -130,4 +133,36 @@
   flex-direction: column;
   justify-content: space-between;
   margin-right: 30px;
+}
+
+@media screen and (max-width: 640px) {
+
+  main {
+    width: 100vw;
+  }
+
+  .first-block h1 {
+    display: block;
+    width: auto;
+  }
+
+  .virus-images {
+    display: none;
+  }
+
+  .second-block .coronavirus-video {
+    width: 70vw;
+  }
+
+.symptoms-img .temperature {
+  display: none;
+}
+
+.symptoms-img .niesen {
+  width: 50vw;
+  margin-top: 50px;
+  margin-left: 15%;
+
+}
+
 }
